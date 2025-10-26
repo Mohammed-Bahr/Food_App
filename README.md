@@ -47,7 +47,7 @@ Frontend
 1. cd Frontend
 2. npm install
 3. npm start
-4. Open http://localhost:3000 (or the port shown by the React dev server)
+4. Open [http://localhost:5173/] (or the port shown by the React dev server)
 
 Notes: adjust ports if needed. If using both dev servers, consider running them in separate terminals or using a root-level script with `concurrently`.
 
@@ -92,4 +92,5 @@ Adjust endpoints if your server prefixes routes (e.g., `/api/recipes`).
 
 ## License
 Add a license file as appropriate (e.g., MIT).
+
 
