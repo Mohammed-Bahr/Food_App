@@ -20,18 +20,6 @@ Goal: allow users to register/login and create, read, update, delete and filter 
 - npm or yarn
 - MongoDB instance (local or hosted: Atlas)
 
-## Environment variables
-Create a `.env` file for the backend (Backend/.env). Example:
-```
-MONGO_URI=mongodb://localhost:27017/food_app
-PORT=3000
-JWT_SECRET=your_jwt_secret_here
-```
-
-Frontend may use a .env for client settings (e.g., REACT_APP_API_URL):
-```
-REACT_APP_API_URL=http://localhost:3000
-```
 
 ## Setup & run
 
@@ -92,5 +80,6 @@ Adjust endpoints if your server prefixes routes (e.g., `/api/recipes`).
 
 ## License
 Add a license file as appropriate (e.g., MIT).
+
 
 
