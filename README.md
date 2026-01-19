@@ -78,8 +78,6 @@ Adjust endpoints if your server prefixes routes (e.g., `/api/recipes`).
 - Fork, create a feature branch, run tests (if any), submit PR.
 - Keep commits small and focused.
 
-## License
-Add a license file as appropriate (e.g., MIT).
 
 
 
