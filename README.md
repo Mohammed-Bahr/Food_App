@@ -1,83 +1,127 @@
-# Food App (MERN)
+# Food App
 
-Simple recipes application built with the MERN stack. This repository contains two main parts:
-- Backend: Node.js + Express + Mongoose (MongoDB)
-- Frontend: React (with TailwindCSS + Framer Motion)
+A comprehensive Food Recipe Application built with the MERN stack (MongoDB, Express, React, Node.js). This application allows users to browse recipes, manage their profile, and save their favorite dishes.
 
-Goal: allow users to register/login and create, read, update, delete and filter recipes.
+## System Design & Technology Stack
 
-## Repo layout
-- Backend/ — Express API, Mongoose models and routes
-- Frontend/ — React app (pages, components, context, styles)
+The application follows a standard Client-Server architecture.
 
-## Tech stack
-- Backend: Node.js, Express, Mongoose (MongoDB)
-- Frontend: React, Tailwind CSS, Framer Motion, lucide-react (icons)
-- Dev: nodemon, concurrently (optional)
+### Frontend
 
-## Prerequisites
-- Node.js (v16+)
-- npm or yarn
-- MongoDB instance (local or hosted: Atlas)
+- **Framework**: [React](https://react.dev/) (powered by [Vite](https://vitejs.dev/))
+- **Styling**: [TailwindCSS](https://tailwindcss.com/) for utility-first styling.
+- **Animations**: [Framer Motion](https://www.framer.com/motion/) and [GSAP](https://gsap.com/) for rich, dynamic interactions.
+- **Icons**: [Lucide React](https://lucide.dev/) and MUI Icons.
+- **State Management**: React Hooks (implied).
+- **Routing**: React Router DOM.
 
+### Backend
 
-## Setup & run
+- **Runtime**: [Node.js](https://nodejs.org/)
+- **Framework**: [Express.js](https://expressjs.com/)
+- **Database**: [MongoDB](https://www.mongodb.com/) with [Mongoose](https://mongoosejs.com/) ODM.
+- **Authentication**: Custom implementation (implied by User routes).
+- **Server utility**: `nodemon` for development.
 
-Backend
-1. cd Backend
-2. npm install
-3. Start:
-   - npm start (if defined)
-   - or nodemon index.js / node index.js
-4. Ensure MongoDB is running and MONGO_URI is correct.
+### Database Schema
 
-Frontend
-1. cd Frontend
-2. npm install
-3. npm start
-4. Open [http://localhost:5173/] (or the port shown by the React dev server)
+- **Users**: Stores user profiles (Name, Email, Password, Admin status).
+- **Recipes**: Stores recipe details (Title, Ingredients, Instructions, Cooking Time, Categories, Images).
+- **Favourites**: Links Users to their saved Recipes.
 
-Notes: adjust ports if needed. If using both dev servers, consider running them in separate terminals or using a root-level script with `concurrently`.
+---
 
-## API (quick summary)
-Base path example: http://localhost:3000 (backend)
+## API Documentation
 
-Recipes endpoints (see Backend/Recipes/):
-- GET /recipes
-  - List all recipes
-- GET /recipes/filter/favourites
-  - List favorite recipes (isLoved: true)
-- GET /recipes/:id
-  - Get recipe by id
-- POST /recipes
-  - Create recipe (body: title, description, ingredients, instructions, cookingTime, imageUrl, category)
-- PUT /recipes/:id
-  - Update recipe by id
-- DELETE /recipes/:id
-  - Delete recipe by id
+The backend exposes a RESTful API.
 
-User endpoints (used by frontend):
-- POST /users/register
-  - Register a new user (body fields depend on backend implementation)
-- POST /users/login
-  - Login and return auth token (implementation-dependent)
+### 🥘 Recipes (`/recipes`)
 
-Adjust endpoints if your server prefixes routes (e.g., `/api/recipes`).
+| Method   | Endpoint                     | Description                                                 |
+| :------- | :--------------------------- | :---------------------------------------------------------- |
+| `GET`    | `/recipes`                   | Retrieve all recipes.                                       |
+| `GET`    | `/recipes/:id`               | Retrieve a specific recipe by ID.                           |
+| `POST`   | `/recipes`                   | Create a new recipe.                                        |
+| `PUT`    | `/recipes/:id`               | Update an existing recipe.                                  |
+| `DELETE` | `/recipes/:id`               | Delete a recipe.                                            |
+| `GET`    | `/recipes/filter/favourites` | Get all recipes marked globally as "loved" (internal flag). |
 
-## Frontend notes
-- RegisterPage.jsx demonstrates form handling and submission to `/users/register`.
-- The UI uses Tailwind + Framer Motion for animations.
+### 👤 Users (`/users`)
 
-## Troubleshooting
-- If 404 on recipe by id, verify:
-  - The id is a valid MongoDB ObjectId.
-  - The backend is connected to the database.
-- If CORS errors, enable CORS in backend (npm package `cors`) and configure allowed origins.
+| Method   | Endpoint              | Description                |
+| :------- | :-------------------- | :------------------------- |
+| `POST`   | `/users/register`     | Register a new user.       |
+| `POST`   | `/users/login`        | Authenticate a user.       |
+| `GET`    | `/users`              | Get all users.             |
+| `GET`    | `/users/:id`          | Get user details by ID.    |
+| `GET`    | `/users/email/:email` | Get user details by Email. |
+| `PUT`    | `/users/:id`          | Update user profile.       |
+| `DELETE` | `/users/:id`          | Delete a user account.     |
 
-## Contributing
-- Fork, create a feature branch, run tests (if any), submit PR.
-- Keep commits small and focused.
+### ❤️ Favourites (`/favourites`)
 
+| Method   | Endpoint                        | Description                                        |
+| :------- | :------------------------------ | :------------------------------------------------- |
+| `GET`    | `/favourites/:id`               | Get all favourite recipes for a specific user ID.  |
+| `POST`   | `/favourites`                   | Add a recipe to a user's favourites.               |
+| `PUT`    | `/favourites/toggle`            | Toggle a recipe in/out of favourites (Add/Remove). |
+| `DELETE` | `/favourites/:userId/:recipeId` | Remove a specific recipe from a user's favourites. |
 
+---
 
+## Getting Started
 
+Follow these instructions to set up the project locally.
+
+### Prerequisites
+
+- **Node.js**: Ensure Node.js is installed.
+- **MongoDB**: Ensure MongoDB is installed and running locally on default port `27017`.
+
+### 1. Backend Setup
+
+Navigate to the Backend directory:
+
+```bash
+cd Backend
+```
+
+Install dependencies:
+
+```bash
+npm install cors dotenv express mongoose nodemon
+```
+
+Start the server:
+
+- For development (with auto-restart):
+  ```bash
+  npm run dev
+  ```
+- For production/standard start:
+  ```bash
+  npm start
+  ```
+  _The server will start at `http://localhost:3000` and connect to the local MongoDB database `Food_App`._
+
+### 2. Frontend Setup
+
+Navigate to the Frontend directory:
+
+```bash
+cd Frontend
+```
+
+Install dependencies:
+
+```bash
+npm install @emotion/styled @gsap/react @mui/icons-material @mui/styled-engine @tailwindcss/vite dotenv framer-motion gsap lucide-react ogl react react-dom react-router-dom tailwindcss
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+_Access the application via the URL provided in the terminal (usually `http://localhost:5173`)._
