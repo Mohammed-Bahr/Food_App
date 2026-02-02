@@ -1,4 +1,4 @@
-<img width="1599" height="935" alt="image" src="https://github.com/user-attachments/assets/2ecc3f9a-8660-4702-8b39-247ea68689e7" />
+<img width="1919" height="961" alt="image" src="https://github.com/user-attachments/assets/63f78360-2aaa-4fc4-b462-8ba9065d56c3" />
 
 # Food App
 
@@ -127,4 +127,5 @@ npm run dev
 ```
 
 _Access the application via the URL provided in the terminal (usually `http://localhost:5173`)._
+
 
