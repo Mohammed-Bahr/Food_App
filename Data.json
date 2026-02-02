@@ -1,0 +1,29 @@
+{
+  "title": "Spicy Garlic Shrimp",
+  "description": "A quick and flavorful seafood dish perfect for weeknights.",
+  "ingredients": [
+    "1 lb large shrimp, peeled and deveined",
+    "4 cloves garlic, minced",
+    "1 tsp red pepper flakes",
+    "2 tbsp olive oil",
+    "Fresh parsley for garnish"
+  ],
+  "instructions": [
+    {
+      "step": "Heat olive oil in a large skillet over medium-high heat."
+    },
+    {
+      "step": "Add garlic and red pepper flakes; sauté for 1 minute until fragrant."
+    },
+    {
+      "step": "Add shrimp and cook for 2-3 minutes per side until pink and opaque."
+    },
+    {
+      "step": "Garnish with parsley and serve immediately."
+    }
+  ],
+  "cookingTime": 15,
+  "imageUrl": "https://example.com/images/garlic-shrimp.jpg",
+  "category": "Seafood",
+  "isLoved": true
+}
