@@ -1,3 +1,5 @@
+<img width="1599" height="935" alt="image" src="https://github.com/user-attachments/assets/2ecc3f9a-8660-4702-8b39-247ea68689e7" />
+
 # Food App
 
 A comprehensive Food Recipe Application built with the MERN stack (MongoDB, Express, React, Node.js). This application allows users to browse recipes, manage their profile, and save their favorite dishes.
@@ -125,3 +127,4 @@ npm run dev
 ```
 
 _Access the application via the URL provided in the terminal (usually `http://localhost:5173`)._
+
