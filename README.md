@@ -2,6 +2,8 @@
 
 <img width="1919" height="961" alt="image" src="https://github.com/user-attachments/assets/1ce9d873-f061-421f-a475-6d5865076c9a" />
 
+<img width ="1919" height="961" alt="image"  src="images/Screenshot From 2026-02-02 20-13-58.png">
+
 <img width ="1919" height="961" alt="image"  src="images/Screenshot From 2026-02-02 20-12-57.png">
 
 <img width ="1919" height="961" alt="image"  src="images/Screenshot From 2026-02-02 20-13-18.png">
@@ -11,6 +13,9 @@
 <img width ="1919" height="961" alt="image"  src="images/Screenshot From 2026-02-02 20-14-30.png">
 
 <img width ="1919" height="961" alt="image"  src="images/Screenshot From 2026-02-02 20-14-37.png">
+
+
+
 
 # Food App
 
@@ -139,6 +144,7 @@ npm run dev
 ```
 
 _Access the application via the URL provided in the terminal (usually `http://localhost:5173`)._
+
 
 
 
