@@ -1,29 +1,212 @@
-{
-  "title": "Spicy Garlic Shrimp",
-  "description": "A quick and flavorful seafood dish perfect for weeknights.",
-  "ingredients": [
-    "1 lb large shrimp, peeled and deveined",
-    "4 cloves garlic, minced",
-    "1 tsp red pepper flakes",
-    "2 tbsp olive oil",
-    "Fresh parsley for garnish"
-  ],
-  "instructions": [
-    {
-      "step": "Heat olive oil in a large skillet over medium-high heat."
-    },
-    {
-      "step": "Add garlic and red pepper flakes; sauté for 1 minute until fragrant."
-    },
-    {
-      "step": "Add shrimp and cook for 2-3 minutes per side until pink and opaque."
-    },
-    {
-      "step": "Garnish with parsley and serve immediately."
-    }
-  ],
-  "cookingTime": 15,
-  "imageUrl": "https://example.com/images/garlic-shrimp.jpg",
-  "category": "Seafood",
-  "isLoved": true
-}
+[
+  {
+    "title": "Creamy Garlic Parmesan Pasta",
+    "description": "A quick and delicious pasta dish with a rich creamy sauce, perfect for a weeknight dinner.",
+    "ingredients": [
+      "400g Fettuccine pasta",
+      "2 cups Heavy cream",
+      "1 cup Parmesan cheese, grated",
+      "3 cloves Garlic, minced",
+      "2 tbsp Butter",
+      "Fresh parsley for garnish"
+    ],
+    "instructions": [
+      { "step": "Boil the pasta in salted water according to package instructions." },
+      { "step": "In a large skillet, melt butter over medium heat and sauté garlic for 1 minute." },
+      { "step": "Pour in heavy cream and bring to a simmer. Stir in parmesan cheese until melted." },
+      { "step": "Toss the cooked pasta in the sauce until fully coated." },
+      { "step": "Garnish with fresh parsley and serve warm." }
+    ],
+    "cookingTime": 20,
+    "imageUrl": "https://images.unsplash.com/photo-1645112411341-6c4fd023714a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "category": "Dinner",
+    "isLoved": true
+  },
+  {
+    "title": "Fluffy Blueberry Pancakes",
+    "description": "Classic American breakfast staples made fluffy, light, and bursting with fresh blueberries.",
+    "ingredients": [
+      "1 1/2 cups All-purpose flour",
+      "1 tbsp Sugar",
+      "1 tbsp Baking powder",
+      "1 1/4 cups Milk",
+      "1 Egg",
+      "1/2 cup Fresh blueberries",
+      "Maple syrup for serving"
+    ],
+    "instructions": [
+      { "step": "Whisk flour, sugar, baking powder, and salt in a bowl." },
+      { "step": "In a separate bowl, mix milk, egg, and melted butter." },
+      { "step": "Combine wet and dry ingredients, then fold in blueberries gently." },
+      { "step": "Pour batter onto a hot, greased griddle and cook until bubbles form." },
+      { "step": "Flip and cook until golden brown." }
+    ],
+    "cookingTime": 15,
+    "imageUrl": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "category": "Breakfast",
+    "isLoved": false
+  },
+  {
+    "title": "Classic Beef Smashburger",
+    "description": "Juicy beef patties smashed crispy on the edges, topped with melted cheddar and fresh veggies.",
+    "ingredients": [
+      "500g Ground beef (80/20 blend)",
+      "4 Brioche buns",
+      "4 slices Cheddar cheese",
+      "1 Red onion, sliced",
+      "Lettuce and Tomato",
+      "Salt and Pepper"
+    ],
+    "instructions": [
+      { "step": "Form ground beef into loose balls and season generously." },
+      { "step": "Heat a cast-iron skillet to high heat." },
+      { "step": "Place beef balls on skillet and smash flat with a spatula." },
+      { "step": "Cook for 2-3 minutes, flip, add cheese, and cook for another minute." },
+      { "step": "Assemble on toasted brioche buns with veggies." }
+    ],
+    "cookingTime": 25,
+    "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "category": "Lunch",
+    "isLoved": true
+  },
+  {
+    "title": "Healthy Quinoa Salad Bowl",
+    "description": "A refreshing and nutritious salad packed with protein-rich quinoa, avocados, and lime dressing.",
+    "ingredients": [
+      "1 cup Quinoa",
+      "1 Avocado, diced",
+      "1 cup Cherry tomatoes, halved",
+      "1/2 Cucumber, sliced",
+      "2 tbsp Olive oil",
+      "1 tbsp Lime juice"
+    ],
+    "instructions": [
+      { "step": "Rinse quinoa and cook in boiling water for 15 minutes." },
+      { "step": "Let the quinoa cool to room temperature." },
+      { "step": "Chop all vegetables into bite-sized pieces." },
+      { "step": "Whisk olive oil, lime juice, salt, and pepper in a small bowl." },
+      { "step": "Combine everything in a large bowl and toss well." }
+    ],
+    "cookingTime": 20,
+    "imageUrl": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "category": "Vegan",
+    "isLoved": true
+  },
+  {
+    "title": "Spicy Chicken Tacos",
+    "description": "Mexican street-style tacos with marinated chicken, salsa, and lime.",
+    "ingredients": [
+      "500g Chicken thighs, diced",
+      "1 tbsp Chili powder",
+      "1 tsp Cumin",
+      "6 Corn tortillas",
+      "1/2 cup Onion, diced",
+      "Fresh cilantro",
+      "Salsa verde"
+    ],
+    "instructions": [
+      { "step": "Marinate diced chicken with chili powder, cumin, and salt." },
+      { "step": "Sear chicken in a hot pan until fully cooked and slightly charred." },
+      { "step": "Warm the corn tortillas on a dry skillet." },
+      { "step": "Fill tortillas with chicken, onions, and cilantro." },
+      { "step": "Top with salsa verde and a squeeze of lime." }
+    ],
+    "cookingTime": 30,
+    "imageUrl": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "category": "Dinner",
+    "isLoved": false
+  },
+  {
+    "title": "Decadent Chocolate Lava Cake",
+    "description": "Rich individual chocolate cakes with a gooey molten center.",
+    "ingredients": [
+      "100g Dark chocolate",
+      "100g Butter",
+      "2 Eggs",
+      "2 Egg yolks",
+      "1/2 cup Sugar",
+      "2 tbsp Flour"
+    ],
+    "instructions": [
+      { "step": "Preheat oven to 200°C (400°F) and grease ramekins." },
+      { "step": "Melt butter and chocolate together in a double boiler." },
+      { "step": "Whisk eggs, yolks, and sugar until thick and pale." },
+      { "step": "Fold chocolate mixture and flour into the eggs gently." },
+      { "step": "Bake for 12 minutes until sides are firm but center is soft." }
+    ],
+    "cookingTime": 25,
+    "imageUrl": "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "category": "Dessert",
+    "isLoved": true
+  },
+  {
+    "title": "Creamy Garlic Parmesan Pasta",
+    "description": "A quick and comforting pasta dish coated in a velvety garlic and cheese sauce.",
+    "ingredients": [
+      "250g Fettuccine pasta",
+      "1 cup Heavy cream",
+      "1/2 cup Grated Parmesan cheese",
+      "3 cloves Garlic, minced",
+      "2 tbsp Butter",
+      "1 tbsp Fresh parsley"
+    ],
+    "instructions": [
+      { "step": "Boil pasta in salted water according to package directions." },
+      { "step": "Melt butter in a skillet over medium heat and sauté garlic." },
+      { "step": "Pour in heavy cream and simmer for 3 minutes to thicken." },
+      { "step": "Stir in Parmesan cheese until melted and smooth." },
+      { "step": "Toss cooked pasta in the sauce and garnish with parsley." }
+    ],
+    "cookingTime": 20,
+    "imageUrl": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "category": "Main Course",
+    "isLoved": true
+  },
+  {
+    "title": "Classic Fluffy Pancakes",
+    "description": "Golden, airy pancakes served perfectly with syrup and fresh berries.",
+    "ingredients": [
+      "1 1/2 cups All-purpose flour",
+      "3 1/2 tsp Baking powder",
+      "1 tsp Salt",
+      "1 tbsp White sugar",
+      "1 1/4 cups Milk",
+      "1 Egg",
+      "3 tbsp Butter, melted"
+    ],
+    "instructions": [
+      { "step": "Sift together flour, baking powder, salt, and sugar." },
+      { "step": "Whisk milk, egg, and melted butter in a separate bowl." },
+      { "step": "Pour wet ingredients into dry and mix until just combined." },
+      { "step": "Pour batter onto a hot, greased griddle." },
+      { "step": "Flip when bubbles appear and cook until golden brown." }
+    ],
+    "cookingTime": 15,
+    "imageUrl": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "category": "Breakfast",
+    "isLoved": false
+  },
+  {
+    "title": "Fresh Caprese Salad",
+    "description": "A refreshing Italian salad featuring ripe tomatoes, fresh mozzarella, and basil.",
+    "ingredients": [
+      "3 Large tomatoes, sliced",
+      "200g Fresh mozzarella cheese",
+      "1 bunch Fresh basil leaves",
+      "2 tbsp Extra virgin olive oil",
+      "1 tbsp Balsamic glaze",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      { "step": "Slice the tomatoes and mozzarella into thick rounds." },
+      { "step": "Arrange slices on a platter, alternating tomato and cheese." },
+      { "step": "Tuck fresh basil leaves between the layers." },
+      { "step": "Drizzle generously with olive oil and balsamic glaze." },
+      { "step": "Sprinkle with salt and freshly cracked pepper before serving." }
+    ],
+    "cookingTime": 10,
+    "imageUrl": "https://images.unsplash.com/photo-1529312266912-b33cf6227e2f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "category": "Appetizer",
+    "isLoved": true
+  }
+]
