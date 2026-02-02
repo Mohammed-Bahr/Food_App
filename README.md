@@ -4,6 +4,14 @@
 
 <img width ="1919" height="961" alt="image"  src="images/Screenshot From 2026-02-02 20-12-57.png">
 
+<img width ="1919" height="961" alt="image"  src="images/Screenshot From 2026-02-02 20-13-18.png">
+
+<img width ="1919" height="961" alt="image"  src="images/Screenshot From 2026-02-02 20-13-24.png">
+
+<img width ="1919" height="961" alt="image"  src="images/Screenshot From 2026-02-02 20-14-30.png">
+
+<img width ="1919" height="961" alt="image"  src="images/Screenshot From 2026-02-02 20-14-37.png">
+
 # Food App
 
 A comprehensive Food Recipe Application built with the MERN stack (MongoDB, Express, React, Node.js). This application allows users to browse recipes, manage their profile, and save their favorite dishes.
@@ -131,6 +139,7 @@ npm run dev
 ```
 
 _Access the application via the URL provided in the terminal (usually `http://localhost:5173`)._
+
 
 
 
