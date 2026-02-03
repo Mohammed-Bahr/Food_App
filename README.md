@@ -24,6 +24,59 @@ A comprehensive Food Recipe Application built with the MERN stack (MongoDB, Expr
 ## System Design & Technology Stack
 
 The application follows a standard Client-Server architecture.
+Repository (root)
+
+.vscode/ (IDE settings)
+Backend/ (Express + Mongoose backend)
+DOCKER_README.md — instructions for Docker setup for the backend
+Dockerfile — multi-stage Dockerfile for the backend
+docker-compose.yml — compose config (app, app-dev and optional services commented)
+dockerignore — files ignored by Docker builds
+server.js — main Express server (connects to MongoDB, mounts routes)
+.env — backend environment variables (MONGODB_URL)
+package.json — backend dependencies & scripts
+Recipes/
+RecipesModel.js — Mongoose model/schema for recipes
+RecipesRoutes.js — Express routes for recipe CRUD and helper (findRecipeById)
+User/
+UserModel.js — Mongoose model for users
+UserRoutes.js — Express routes for user registration, fetch, update, delete
+Favourites/
+Favourites.js — Mongoose schema/model for favourites (userId + recipe refs)
+FavouritesRoutes.js — routes to add/list/remove favourites for a user
+Frontend/ (React + Vite frontend)
+.env
+.gitignore
+README.md
+eslint.config.js
+index.html
+package.json
+package-lock.json
+vite.config.js
+public/ (static/public assets directory)
+src/
+App.jsx — main App with routing (imports many components/pages)
+main.jsx — React entry that mounts App
+index.css — base CSS (imports Tailwind)
+Components/
+Menu.jsx — recipes listing / search / filter UI
+Navbar.jsx — site navigation with auth-aware links
+ProfileDemo.jsx — small profile card component
+UserProfile.jsx — user profile UI (editable)
+RecipeDisplayPage.jsx — single-recipe display, toggle favorite
+SplitText.jsx — GSAP split-text animation helper
+(other components likely exist — these are the main ones found)
+pages/
+HomePage.jsx — home page (hero / intro)
+RegisterPage.jsx — registration form
+LoginPage.jsx — login form
+AddRecipePage.jsx — form to create a new recipe
+FavouritesPage.jsx — page listing user favorites
+Context/
+Auth/ (referenced: AuthProvider, AuthContext files are imported by components — these likely exist under this path)
+Data.json — large JSON file (likely seed/demo data)
+images/ — image assets used by the project
+README.md — repository README (project overview, usage)
 
 ### Frontend
 
@@ -144,6 +197,7 @@ npm run dev
 ```
 
 _Access the application via the URL provided in the terminal (usually `http://localhost:5173`)._
+
 
 
 
