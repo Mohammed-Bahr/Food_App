@@ -43,39 +43,4 @@ RUN npm ci
 
 # Copy source code
 COPY . .
-
-# Build the application (uncomment if using TypeScript)
-# RUN npm run build
-
-# Production image
-FROM base AS production
-WORKDIR /app
-
-# Create a non-root user
-RUN addgroup --system --gid 1001 nodejs && \
-    adduser --system --uid 1001 expressuser
-
-# Copy dependencies from deps stage
-COPY --from=deps /app/node_modules ./node_modules
-
-# Copy application code
-COPY --chown=expressuser:nodejs . .
-
-# If you have a build step, copy built files instead
-# COPY --from=builder --chown=expressuser:nodejs /app/dist ./dist
-
-# Switch to non-root user
-USER expressuser
-
-# Expose port
-EXPOSE 3000
-
-# Set environment to production
-ENV NODE_ENV=production
-
-# Health check
-HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-    CMD node -e "require('http').get('http://localhost:3000/health', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})"
-
-# Start the application
-CMD ["node", "server.js"]
+ 

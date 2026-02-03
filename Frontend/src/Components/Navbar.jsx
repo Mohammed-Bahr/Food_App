@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X, User, LogOut } from "lucide-react";
+import { Menu, X, User, LogOut, PlusCircle } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "../Context/Auth/AuthContext";
@@ -33,6 +33,14 @@ export default function Navbar() {
 
   // Navigation handlers
 
+
+  const handleAddRecipeClick = () => {
+    if (isAuthenticated) {
+      navigate("/addRecipe");
+    } else {
+      navigate("/login");
+    }
+  };
 
   const handleLoveClick = () => {
     if (isAuthenticated) {
@@ -136,6 +144,20 @@ export default function Navbar() {
             >
               <FavoriteBorderIcon size={20} />
             
+            </motion.button>
+
+            {/* Add Recipe Button */}
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={handleAddRecipeClick}
+              className={`relative p-2 rounded-full transition-colors ${scrolled
+                  ? "hover:bg-gray-100 text-gray-700"
+                  : "hover:bg-white/10 text-zinc-500"
+                }`}
+              title="Add Recipe"
+            >
+              <PlusCircle size={20} />
             </motion.button>
 
             {/* User Menu */}
@@ -279,6 +301,15 @@ export default function Navbar() {
                   >
                     <FavoriteBorderIcon size={18} />
                     
+                  </button>
+
+                  {/* Mobile Add Recipe */}
+                  <button
+                    onClick={handleAddRecipeClick}
+                    className="w-full flex items-center justify-center gap-2 bg-gray-100 text-gray-700 px-5 py-2 rounded-full hover:bg-gray-200 transition"
+                  >
+                    <PlusCircle size={18} />
+                    <span>Add Recipe</span>
                   </button>
 
                   {/* Mobile Order Now */}
