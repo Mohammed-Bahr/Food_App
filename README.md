@@ -24,6 +24,8 @@ A comprehensive Food Recipe Application built with the MERN stack (MongoDB, Expr
 ## System Design & Technology Stack
 
 The application follows a standard Client-Server architecture.
+Repository (root)
+
 
 ### Frontend
 
@@ -144,6 +146,8 @@ npm run dev
 ```
 
 _Access the application via the URL provided in the terminal (usually `http://localhost:5173`)._
+
+
 
 
 
